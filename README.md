@@ -107,6 +107,11 @@ This is the login page of the site.
 
 This is the About US page of the site. This is the easter egg for Breaking Bad fans. Die had fans of the show will understand the story!!
 
+## Changelogs
 
+v1.0:
+
+- site is in skeleton stage and only a part of the front end design is completed.
+- site added to github and readme updated
 
 
