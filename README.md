@@ -26,3 +26,9 @@ A comprehensive website designed for artists to learn, explore and share digital
 - Expanding the sections available on Learn section and Discover sections.
 - Providing realtime and dynamic art inspiration exclusive to each user by implementing model training and Machine learning.
 - Usage of 3D objects in the site using three.js technologies.
+
+## Design Overview
+
+![Screenshot (174)](https://user-images.githubusercontent.com/86250122/212477035-4cb39618-7416-4313-9e55-9dc7cfead651.png)
+
+#This is the Landing page of the website with a welcome and a nav bar made using Bootstrap library.
