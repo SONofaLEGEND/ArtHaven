@@ -80,6 +80,33 @@ This is the landing page of the Learning section of the site. This is a special 
 
 ![Screenshot (183)](https://user-images.githubusercontent.com/86250122/212478144-90ed4717-f0cb-4b1a-984c-e0ac15d4d3ce.png)
 
-The learn section menu currently provides content for three softwares namely Blender, Unreal Engine and Photoshop. The cards' logos are made 3d using Blender and exported here to provide a 3d experience. 
+The learn section menu currently provides content for three softwares namely Blender, Unreal Engine and Photoshop. The cards' logos are made 3d using Blender and exported here to provide a 3d experience. Currently, this entire section is under construction and has content for only Blender section.
+
+![Screenshot (184)](https://user-images.githubusercontent.com/86250122/212478395-53760698-1a13-4769-a106-8e22227a0e44.png)
+
+This is the landing page of the Blender learning section. The background was rendered in Blender and exported here.
+
+![Screenshot (185)](https://user-images.githubusercontent.com/86250122/212478422-9b3981b2-d89c-4075-b1ed-83b2598e0aac.png)
+![Screenshot (186)](https://user-images.githubusercontent.com/86250122/212478432-98c50c7b-d19f-4bbb-bbc2-3315dc05d3cc.png)
+
+The Blender learning path has a radial menu with a central button that expands/contracts the menu list on click. It was made uing javascipt.
+
+![Screenshot (192)](https://user-images.githubusercontent.com/86250122/212478494-78f00fb6-284f-41fa-931d-30877be9d801.png)
+
+The sign-up section is made using basic html forms and enhanced using css. This section is currely redundant as the true feature comes into play only after connecting the site in backend. 
+
+![Screenshot (193)](https://user-images.githubusercontent.com/86250122/212478537-40eeba4b-491b-419e-b16f-0d2f0b4dfede.png)
+
+The sign-up section currenly provieds basic validation for username, email and password verification using vanilla javascript.
+
+![Screenshot (191)](https://user-images.githubusercontent.com/86250122/212478592-88e15bc8-63ac-4625-b52e-cfde9b729802.png)
+
+This is the login page of the site.
+
+![Screenshot (190)](https://user-images.githubusercontent.com/86250122/212478611-90e0bd61-e5c2-4d2c-bb1d-f572852429e9.png)
+
+This is the About US page of the site. This is the easter egg for Breaking Bad fans. Die had fans of the show will understand the story!!
+
+
 
 
