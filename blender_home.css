@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Dosis';
+    src: url(fonts/Dosis-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poiret';
+    src: url(fonts/PoiretOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cornerstone';
+    src: url(fonts/Cornerstone.ttf);
+}
+
+@font-face {
+    font-family: 'Josefin';
+    src: url(fonts/JosefinSlab-Medium.ttf);
+}
+@font-face {
+    font-family: 'Emberly';
+    src: url(fonts/Emberly-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Patua';
+    src: url(fonts/PatuaOne-Regular.ttf);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+a  {
+    text-decoration: none;
+}
+body {
+    overflow-x: hidden;
+}
+/*Child*/
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+/*Parent*/
+.container {
+
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+
+}
+
+.one {
+    background: url(images/b.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.one h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 300px;
+    font-family: 'Josefin', sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 100px;
+    text-shadow: 1px 1px 1px #3A8891,
+    1px 2px 1px #3A8891, 
+    1px 3px 1px #3A8891, 
+    1px 4px 1px #3A8891, 
+    1px 5px 1px #3A8891, 
+    1px 6px 1px #3A8891, 
+    1px 8px 1px rgba(16, 16, 16, 0.4),
+    1px 10px 6px rgba(16, 16, 16, 0.2),
+    1px 14px 15px rgba(16, 16, 16, 0.2),
+    1px 20px 20px rgba(16, 16, 16, 0.4);
+
+}

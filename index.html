@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ART HAVEN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<!--
+    <nav class="navbar">
+        <h1 class="logo">ART HAVEN</h1>
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class = "ctn"><a href="login.html">Login</a></li>
+        </ul>
+    <img src="images/nav.png" alt="" class="menu-btn">
+    </nav>-->
+<body>
+    
+    <div class="scroll">
+    <header>
+        <div class="header-content">
+            <h2>HEY THERE, PI<span id = "white">CASSO</span></h2>
+        
+        <div class="line"></div>
+        <h1>Welco<span id="green">me to</span> <span id="white">Art H</span>aven</h1>
+        <a href="homepage.html" class="ctn">Gaze Through</a>
+        </div>
+    </header>
+
+    <section class = 'events'>
+        <div class="title">
+            <h2>LEVEL UP YOUR DIGITAL ART</h2>
+            <div class="line1"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class = "image" src="images/blender.png" alt="">
+                <h4>BLENDER 3D</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="blender_home.html" class="ctn">Dive In</a>
+            </div>
+            <div class="col">
+                <img class = "image" src="images/ue.PNG" alt="">
+                <h4>UNREAL ENGINE</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="#" class="ctn">Dive In</a>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="explore">
+        <div class="explore-content">
+            <h1>FIND INSPIRATION</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="ins.html" class = "ctn">GET INSPIRED</a>
+        </div>
+    </section>
+
+    <section class="share">
+        <div class="row">
+            <div class="col content-col">
+                <h1>SHARE YOUR CREATION</h1>
+                <div class="line1"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <a href="#" class = "ctn">SHARE NOW</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="images/c1.jpg" alt="" class="collage">
+                    <img src="images/c2.jpg" alt="" class="collage">
+                    <img src="images/signup.jpg" alt="" class="collage">
+                    <img src="images/c4.jpg" alt="" class="collage">
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>308 Negra Arroyo Lane, Albuquerque, New Mexico. 87104. | pinkman_heisenberg@hotmail.com  |  +1 69696969</p>
+        <p>Copyright &#169; Cap'n Cook Meths Pvt. Ltd</p>
+    </section>
+
+    </div>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+ 
+</body>
+</html>

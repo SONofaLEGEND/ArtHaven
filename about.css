@@ -1,0 +1,240 @@
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url(fonts/Dosis-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poiret';
+    src: url(fonts/PoiretOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cornerstone';
+    src: url(fonts/Cornerstone.ttf);
+}
+@font-face {
+    font-family: 'Patua';
+    src: url(fonts/PatuaOne-Regular.ttf);
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poiret',sans-serif;
+    font-weight: 1000;
+    background: black;
+}
+
+h1  {
+    font-size: 1.25rem;
+    font-weight: 700;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.small {
+    font-size: 80%;
+    text-align: center;
+}
+
+.split-screen {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left {
+    height: 200px;
+}
+
+.left , .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    background: black;
+    background-size: cover;
+    background-position: center;
+}
+
+.left .copy {
+    font-family: 'Patua', sans-serif;
+    color: white;
+    text-align: center;
+    
+}
+.left .copy h1 {
+    
+    font-size: 50px;
+}
+.left p {
+    text-align: justify;
+    padding: 80px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.right .copy {
+    color: black;
+    text-align: center;
+}
+
+.right .copy p {
+    margin: 1.5em 0;
+    font-size: 0.875rem;
+}
+
+.right form {
+    width: 328px;
+}
+.right {
+    background: url(images/about.jpg);
+    background-position: right;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 1em;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.input-container.password {
+    position: relative;
+}
+
+.input-container.password i {
+    position: absolute;
+    top: 42px;
+    right: 16px;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 1.25rem 0;
+}
+
+.checkbox-container input:checked~.checkmark {
+    background-color: #10A19D;
+    border: 1px solid #10A19D;
+}
+
+.checkmark {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    top: -4px;
+    left: 0;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    width: 5px;
+    height: 10px;
+    top: 4px;
+    left: 8px;
+    transform: rotate(45deg);
+}
+
+.signup-btn {
+    display: block;
+    width: 100%;
+    background: #10A19D;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.signup-btn:hover {
+    background: #6FEDD6;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+ 
+    .split-screen {
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .left, .right {
+        display: flex;
+        width: 50%;
+        height: auto;
+    }
+}
+
+
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: #FF4C29;
+    margin: 10px auto;
+    border-radius: 5px;
+}

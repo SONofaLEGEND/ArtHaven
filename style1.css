@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Dosis';
+    src: url(fonts/Dosis-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poiret';
+    src: url(fonts/PoiretOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Cornerstone';
+    src: url(fonts/Cornerstone.ttf);
+}
+@font-face {
+    font-family: 'Josefin';
+    src: url(fonts/JosefinSlab-Medium.ttf);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px 80px 80px;
+    border-radius: 80px;
+    background-color: #576F72;
+    box-shadow: 2px 2px 5px #00000056;
+}
+
+header {
+    color: #fff;
+    font-size: 70px;
+    font-family: 'Josefin', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+
+}
+.input .field {
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    height: 75px;
+    margin: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    font-family: 'Poiret', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    padding: 0 0 0 45px;   
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover {
+    box-shadow: 1px 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: large;
+    font-family: 'Poiret', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.left {
+
+    display: flex;
+}
+
+label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.signup {
+
+    text-align: center;
+    margin-top: 40px;
+    padding: 0;
+    font-family: 'Josefin', sans-serif;
+    font-size: larger;
+    color: #fff;
+
+}
+
+.signup a:hover{
+    color: crimson;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 0 1.25rem 0;
+}
+
+.checkbox-container input:checked~.checkmark {
+    background-color: white;
+    border: 1px solid white;
+}
+
+.checkmark {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #576F72;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    top: -4px;
+    left: 0;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    border: solid #576F72;
+    border-width: 0 3px 3px 0;
+    width: 5px;
+    height: 10px;
+    top: 4px;
+    left: 8px;
+    transform: rotate(45deg);
+}

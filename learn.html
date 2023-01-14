@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <title>LEARN ART</title>
+    <link rel="stylesheet" href="learn.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="block b-1"></div>
+      <div class="block b-2"></div>
+      <div class="block b-3"></div>
+      <div class="block b-4"></div>
+      <div class="block b-5"></div>
+      <div class="block b-6"></div>
+      <div class="block b-7"></div>
+    </div>
+    <div class="overlay"></div>
+    <p class="title">Learn Digital Art</p>
+    <a href="start.html" class = "start">START NOW</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+      var textWrapper = document.querySelector(".title");
+      textWrapper.innerHTML = textWrapper.textContent.replace(
+        /\S/g,
+        "<span class='letter'>$&</span>"
+      );
+
+      anime.timeline().add({
+        targets: ".title .letter",
+        translateY: [-200, 0],
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: (el, i) => 6500 + 30 * i,
+      });
+
+      TweenMax.staggerFrom(
+        ".container > .block",
+        2,
+        {
+          y: "110%",
+          ease: Expo.easeInOut,
+          delay: 1,
+        },
+        0.4
+      );
+      TweenMax.to(".overlay", 0.5, {
+        y: "100%",
+        ease: Expo.easeInOut,
+        delay: 5.2,
+      });
+
+      TweenMax.to(".container", 2, {
+        scale: "2",
+        y: "90%",
+        ease: Expo.easeInOut,
+        delay: 5.5,
+      });
+      
+
+      
+      
+    </script>
+  </body>
+</html>

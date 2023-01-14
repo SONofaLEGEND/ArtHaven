@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DISCOVER</title>
+    <link rel="stylesheet" href="discover.css">
+</head>
+<body>
+    <section>
+        <img src="images/parallax/1.png" data-speed = "-5" alt="" class="layer">
+        <img src="images/parallax/2.png" data-speed = "5" alt="" class="layer">
+        <img src="images/parallax/3.png" data-speed = "2" alt="" class="layer">
+        <img src="images/parallax/4.png" data-speed = "6" alt="" class="layer">
+        
+        <img src="images/parallax/5.png" data-speed = "8" alt="" class="layer">
+        <img src="images/parallax/6.png" data-speed = "-2" alt="" class="layer">
+        <img src="images/parallax/7.png" data-speed = "4" alt="" class="layer">
+        <img src="images/parallax/8.png" data-speed = "-9" alt="" class="layer">
+        <img src="images/parallax/9.png" data-speed = "6" alt="" class="layer">
+        <img src="images/parallax/10.png" data-speed = "-7" alt="" class="layer">
+        <img src="images/parallax/11.png" data-speed = "-5" alt="" class="layer">
+        <img src="images/parallax/12.png" data-speed = "5" alt="" class="layer">
+        <a href="inspiration.html" data-speed="7" class="layer">Enter here</a>
+       
+        <h2 class="layer" data-speed = "3">DISCOVER<br>DIGITAL ART</h2>
+    </section>
+    <script type = "text/javascript">
+        document.addEventListener("mousemove", parallax);
+        function parallax(e) {
+            this.querySelectorAll('.layer').forEach(layer => {
+                const speed = layer.getAttribute('data-speed')
+                const x = (window.innerWidth - e.pageX*speed)/100
+                const y = (window.innerHeight - e.pageY*speed)/100
+
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
+        }
+
+
+    </script>
+</body>
+</html>
